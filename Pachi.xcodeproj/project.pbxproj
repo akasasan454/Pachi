@@ -11,6 +11,7 @@
 		81ADB93820C13B9C002B0E1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */; };
 		81ADB93F20C13F97002B0E1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ADB93E20C13F97002B0E1F /* FirstViewController.swift */; };
 		81ADB94120C145E4002B0E1F /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ADB94020C145E4002B0E1F /* FirebaseAuth.framework */; };
+		81ADB94320C14DE7002B0E1F /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ADB94220C14DE7002B0E1F /* FirebaseDatabase.framework */; };
 		A7DABECBE226F2AA0A54CAA0 /* Pods_Pachi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */; };
 		E787AF0120C01D2C0096796A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF0020C01D2C0096796A /* AppDelegate.swift */; };
 		E787AF0320C01D2C0096796A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF0220C01D2C0096796A /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81ADB93E20C13F97002B0E1F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		81ADB94020C145E4002B0E1F /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81ADB94220C14DE7002B0E1F /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0984792F9E1AC735AE77BC /* Pods-Pachi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pachi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pachi/Pods-Pachi.debug.xcconfig"; sourceTree = "<group>"; };
 		C898F9CC091335E5E9CB7F8A /* Pods-Pachi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pachi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pachi/Pods-Pachi.release.xcconfig"; sourceTree = "<group>"; };
 		E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pachi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81ADB94320C14DE7002B0E1F /* FirebaseDatabase.framework in Frameworks */,
 				81ADB94120C145E4002B0E1F /* FirebaseAuth.framework in Frameworks */,
 				81ADB93620C13A71002B0E1F /* FirebaseCore.framework in Frameworks */,
 				E787AF1820C021D50096796A /* MapKit.framework in Frameworks */,
@@ -109,6 +112,7 @@
 		E787AF1620C021D50096796A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81ADB94220C14DE7002B0E1F /* FirebaseDatabase.framework */,
 				81ADB94020C145E4002B0E1F /* FirebaseAuth.framework */,
 				81ADB93520C13A71002B0E1F /* FirebaseCore.framework */,
 				E787AF1720C021D50096796A /* MapKit.framework */,
@@ -214,12 +218,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pachi/Pods-Pachi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
