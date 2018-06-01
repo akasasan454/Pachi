@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81ADB93620C13A71002B0E1F /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ADB93520C13A71002B0E1F /* FirebaseCore.framework */; };
+		81ADB93820C13B9C002B0E1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */; };
+		A7DABECBE226F2AA0A54CAA0 /* Pods_Pachi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */; };
 		E787AF0120C01D2C0096796A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF0020C01D2C0096796A /* AppDelegate.swift */; };
 		E787AF0320C01D2C0096796A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF0220C01D2C0096796A /* ViewController.swift */; };
 		E787AF0620C01D2C0096796A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E787AF0420C01D2C0096796A /* Main.storyboard */; };
@@ -17,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81ADB93520C13A71002B0E1F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8A0984792F9E1AC735AE77BC /* Pods-Pachi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pachi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pachi/Pods-Pachi.debug.xcconfig"; sourceTree = "<group>"; };
+		C898F9CC091335E5E9CB7F8A /* Pods-Pachi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pachi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pachi/Pods-Pachi.release.xcconfig"; sourceTree = "<group>"; };
+		E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pachi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E787AEFD20C01D2C0096796A /* Pachi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E787AF0020C01D2C0096796A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E787AF0220C01D2C0096796A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,19 +41,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81ADB93620C13A71002B0E1F /* FirebaseCore.framework in Frameworks */,
 				E787AF1820C021D50096796A /* MapKit.framework in Frameworks */,
+				A7DABECBE226F2AA0A54CAA0 /* Pods_Pachi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0693C85F0FA1C9BD1EBD70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A0984792F9E1AC735AE77BC /* Pods-Pachi.debug.xcconfig */,
+				C898F9CC091335E5E9CB7F8A /* Pods-Pachi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81ADB93920C13BD8002B0E1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E787AF2120C044570096796A /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E787AEF420C01D2C0096796A = {
 			isa = PBXGroup;
 			children = (
 				E787AEFF20C01D2C0096796A /* Pachi */,
 				E787AEFE20C01D2C0096796A /* Products */,
 				E787AF1620C021D50096796A /* Frameworks */,
+				1E0693C85F0FA1C9BD1EBD70 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +88,14 @@
 		E787AEFF20C01D2C0096796A /* Pachi */ = {
 			isa = PBXGroup;
 			children = (
-				E787AF1E20C0404F0096796A /* View */,
-				E787AF1B20C039220096796A /* New Group */,
+				81ADB93920C13BD8002B0E1F /* Controller */,
 				E787AF0020C01D2C0096796A /* AppDelegate.swift */,
 				E787AF0220C01D2C0096796A /* ViewController.swift */,
 				E787AF0420C01D2C0096796A /* Main.storyboard */,
 				E787AF2320C04A950096796A /* TableViewCell.swift */,
 				E787AF0720C01D2D0096796A /* Assets.xcassets */,
 				E787AF0C20C01D2D0096796A /* Info.plist */,
+				81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */,
 			);
 			path = Pachi;
 			sourceTree = "<group>";
@@ -75,24 +103,11 @@
 		E787AF1620C021D50096796A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81ADB93520C13A71002B0E1F /* FirebaseCore.framework */,
 				E787AF1720C021D50096796A /* MapKit.framework */,
+				E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E787AF1B20C039220096796A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		E787AF1E20C0404F0096796A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E787AF2120C044570096796A /* TableViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,9 +117,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E787AF0F20C01D2D0096796A /* Build configuration list for PBXNativeTarget "Pachi" */;
 			buildPhases = (
+				84861B8F91AE87B8BDC69676 /* [CP] Check Pods Manifest.lock */,
 				E787AEF920C01D2C0096796A /* Sources */,
 				E787AEFA20C01D2C0096796A /* Frameworks */,
 				E787AEFB20C01D2C0096796A /* Resources */,
+				9D0704D5A49375761F6B41D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,10 +172,52 @@
 			files = (
 				E787AF0820C01D2D0096796A /* Assets.xcassets in Resources */,
 				E787AF0620C01D2C0096796A /* Main.storyboard in Resources */,
+				81ADB93820C13B9C002B0E1F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84861B8F91AE87B8BDC69676 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pachi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D0704D5A49375761F6B41D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pachi/Pods-Pachi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pachi/Pods-Pachi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E787AEF920C01D2C0096796A /* Sources */ = {
@@ -302,6 +361,7 @@
 		};
 		E787AF1020C01D2D0096796A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A0984792F9E1AC735AE77BC /* Pods-Pachi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +380,7 @@
 		};
 		E787AF1120C01D2D0096796A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C898F9CC091335E5E9CB7F8A /* Pods-Pachi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
