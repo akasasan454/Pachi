@@ -1,0 +1,6 @@
+framework module Pods_Pachi {
+  umbrella header "Pods-Pachi-umbrella.h"
+
+  export *
+  module * { export * }
+}

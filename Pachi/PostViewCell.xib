@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PostViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="430" id="09b-7d-jwP" customClass="PostViewCell" customModule="Pachi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="430"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="09b-7d-jwP" id="qGm-xf-U73">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="429.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yY-4N-VwR">
+                        <rect key="frame" x="20" y="0.0" width="335" height="429.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テスト題名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKr-wm-sK0">
+                                <rect key="frame" x="10" y="343" width="319" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="ucV-4M-r0c"/>
+                                    <constraint firstAttribute="height" constant="35" id="wb1-J8-Eyw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="テスト本文ｓふぁｓｄふぁｓｚｄｇｓｄｇｓｇ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDc-v8-2AQ">
+                                <rect key="frame" x="10" y="386" width="319" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="suQ-Jj-Zk9"/>
+                                    <constraint firstAttribute="height" constant="21" id="uhU-Rw-lnj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1C-Q3-408">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="335"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IKr-wm-sK0" firstAttribute="leading" secondItem="9yY-4N-VwR" secondAttribute="leading" constant="10" id="E7R-xi-5BH"/>
+                            <constraint firstAttribute="trailing" secondItem="IKr-wm-sK0" secondAttribute="trailing" constant="6" id="Fk0-7S-Xew"/>
+                            <constraint firstAttribute="trailing" secondItem="a1C-Q3-408" secondAttribute="trailing" id="HPO-Jd-h5C"/>
+                            <constraint firstAttribute="bottom" secondItem="RDc-v8-2AQ" secondAttribute="bottom" constant="22.5" id="K6D-tf-18c"/>
+                            <constraint firstItem="RDc-v8-2AQ" firstAttribute="leading" secondItem="9yY-4N-VwR" secondAttribute="leading" constant="10" id="SSv-dg-1kA"/>
+                            <constraint firstItem="a1C-Q3-408" firstAttribute="top" secondItem="9yY-4N-VwR" secondAttribute="top" id="X9n-79-c9D"/>
+                            <constraint firstItem="IKr-wm-sK0" firstAttribute="top" secondItem="a1C-Q3-408" secondAttribute="bottom" constant="8" id="icE-vQ-2Q5"/>
+                            <constraint firstItem="RDc-v8-2AQ" firstAttribute="top" secondItem="IKr-wm-sK0" secondAttribute="bottom" constant="8" id="ied-5i-AMr"/>
+                            <constraint firstItem="a1C-Q3-408" firstAttribute="leading" secondItem="9yY-4N-VwR" secondAttribute="leading" id="mJ4-kl-qo9"/>
+                            <constraint firstAttribute="trailing" secondItem="RDc-v8-2AQ" secondAttribute="trailing" constant="6" id="wGu-aj-xVk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9yY-4N-VwR" secondAttribute="bottom" id="E9k-jv-gAS"/>
+                    <constraint firstItem="9yY-4N-VwR" firstAttribute="top" secondItem="qGm-xf-U73" secondAttribute="top" id="U6W-Fc-bOb"/>
+                    <constraint firstAttribute="trailing" secondItem="9yY-4N-VwR" secondAttribute="trailing" constant="20" id="iU5-jl-4mR"/>
+                    <constraint firstItem="9yY-4N-VwR" firstAttribute="leading" secondItem="qGm-xf-U73" secondAttribute="leading" constant="20" id="kDk-I9-kBD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bodyLabel" destination="RDc-v8-2AQ" id="soA-sb-fvx"/>
+                <outlet property="scrollView" destination="a1C-Q3-408" id="CuU-8X-kuF"/>
+                <outlet property="subjectLabel" destination="IKr-wm-sK0" id="ECU-Dl-qvw"/>
+            </connections>
+            <point key="canvasLocation" x="-104.8" y="47.676161919040482"/>
+        </tableViewCell>
+    </objects>
+</document>

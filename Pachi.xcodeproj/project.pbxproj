@@ -8,38 +8,81 @@
 
 /* Begin PBXBuildFile section */
 		81ADB93620C13A71002B0E1F /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ADB93520C13A71002B0E1F /* FirebaseCore.framework */; };
-		81ADB93820C13B9C002B0E1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */; };
 		81ADB93F20C13F97002B0E1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81ADB93E20C13F97002B0E1F /* FirstViewController.swift */; };
 		81ADB94120C145E4002B0E1F /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ADB94020C145E4002B0E1F /* FirebaseAuth.framework */; };
-		81ADB94320C14DE7002B0E1F /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ADB94220C14DE7002B0E1F /* FirebaseDatabase.framework */; };
 		A7DABECBE226F2AA0A54CAA0 /* Pods_Pachi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */; };
+		E75CD58021CDD4EA00438BAA /* Tab1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75CD57F21CDD4EA00438BAA /* Tab1.storyboard */; };
+		E75CD58221CE726F00438BAA /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75CD58121CE726F00438BAA /* TextFieldEffects.framework */; };
 		E787AF0120C01D2C0096796A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF0020C01D2C0096796A /* AppDelegate.swift */; };
-		E787AF0320C01D2C0096796A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF0220C01D2C0096796A /* ViewController.swift */; };
 		E787AF0620C01D2C0096796A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E787AF0420C01D2C0096796A /* Main.storyboard */; };
 		E787AF0820C01D2D0096796A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E787AF0720C01D2D0096796A /* Assets.xcassets */; };
 		E787AF1820C021D50096796A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E787AF1720C021D50096796A /* MapKit.framework */; };
-		E787AF2220C044570096796A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF2120C044570096796A /* TableViewController.swift */; };
-		E787AF2420C04A950096796A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF2320C04A950096796A /* TableViewCell.swift */; };
+		E7B22571221BBABE0094A1DB /* TimelineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B22570221BBABE0094A1DB /* TimelineVC.swift */; };
+		E7B22574221BBFD60094A1DB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B22573221BBFD60094A1DB /* Post.swift */; };
+		E7B22576221BC02E0094A1DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B22575221BC02E0094A1DB /* User.swift */; };
+		E7B22578221BC0590094A1DB /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B22577221BC0590094A1DB /* Differentiator.framework */; };
+		E7B2257A221BC0590094A1DB /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B22579221BC0590094A1DB /* FirebaseFirestore.framework */; };
+		E7B2257C221BC0590094A1DB /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B2257B221BC0590094A1DB /* FirebaseStorage.framework */; };
+		E7B22582221BC0590094A1DB /* openssl_grpc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B22581221BC0590094A1DB /* openssl_grpc.framework */; };
+		E7B22584221BC0590094A1DB /* Pring.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B22583221BC0590094A1DB /* Pring.framework */; };
+		E7B22586221BC0590094A1DB /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B22585221BC0590094A1DB /* Protobuf.framework */; };
+		E7B2258A221BC0590094A1DB /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B22589221BC0590094A1DB /* RxCocoa.framework */; };
+		E7B2258C221BC0590094A1DB /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B2258B221BC0590094A1DB /* RxDataSources.framework */; };
+		E7B22590221BC0590094A1DB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B2258F221BC0590094A1DB /* RxSwift.framework */; };
+		E7B22592221BD4AA0094A1DB /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B22591221BD4AA0094A1DB /* PostViewCell.swift */; };
+		E7B22594221BD5140094A1DB /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B22593221BD5140094A1DB /* PostViewCell.xib */; };
+		E7B5E5D021BE628A00E15781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */; };
+		E7B5E5E221C7E2BD00E15781 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E121C7E2BD00E15781 /* GTMSessionFetcher.framework */; };
+		E7B5E5E621C7E2BD00E15781 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E521C7E2BD00E15781 /* IQKeyboardManagerSwift.framework */; };
+		E7B5E5E821C7E2BD00E15781 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E721C7E2BD00E15781 /* leveldb.framework */; };
+		E7B5E5EA21C7E2BD00E15781 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E921C7E2BD00E15781 /* Material.framework */; };
+		E7B5E5EC21C7E2BD00E15781 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5EB21C7E2BD00E15781 /* Motion.framework */; };
+		E7B5E5EE21C7E2BD00E15781 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5ED21C7E2BD00E15781 /* nanopb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81ADB93520C13A71002B0E1F /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		81ADB93E20C13F97002B0E1F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		81ADB94020C145E4002B0E1F /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81ADB94220C14DE7002B0E1F /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0984792F9E1AC735AE77BC /* Pods-Pachi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pachi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pachi/Pods-Pachi.debug.xcconfig"; sourceTree = "<group>"; };
 		C898F9CC091335E5E9CB7F8A /* Pods-Pachi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pachi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pachi/Pods-Pachi.release.xcconfig"; sourceTree = "<group>"; };
 		E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pachi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E75CD57F21CDD4EA00438BAA /* Tab1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1.storyboard; sourceTree = "<group>"; };
+		E75CD58121CE726F00438BAA /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E787AEFD20C01D2C0096796A /* Pachi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pachi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E787AF0020C01D2C0096796A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E787AF0220C01D2C0096796A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E787AF0520C01D2C0096796A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E787AF0720C01D2D0096796A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E787AF0C20C01D2D0096796A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E787AF1720C021D50096796A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		E787AF2120C044570096796A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		E787AF2320C04A950096796A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E7B22570221BBABE0094A1DB /* TimelineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineVC.swift; sourceTree = "<group>"; };
+		E7B22573221BBFD60094A1DB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E7B22575221BC02E0094A1DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E7B22577221BC0590094A1DB /* Differentiator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Differentiator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B22579221BC0590094A1DB /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B2257B221BC0590094A1DB /* FirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B2257D221BC0590094A1DB /* grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B2257F221BC0590094A1DB /* GRPCClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GRPCClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B22581221BC0590094A1DB /* openssl_grpc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = openssl_grpc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B22583221BC0590094A1DB /* Pring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B22585221BC0590094A1DB /* Protobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Protobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B22587221BC0590094A1DB /* ProtoRPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ProtoRPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B22589221BC0590094A1DB /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B2258B221BC0590094A1DB /* RxDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B2258D221BC0590094A1DB /* RxLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B2258F221BC0590094A1DB /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B22591221BD4AA0094A1DB /* PostViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewCell.swift; sourceTree = "<group>"; };
+		E7B22593221BD5140094A1DB /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewCell.xib; sourceTree = "<group>"; };
+		E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7B5E5DF21C7E2BD00E15781 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5E5E121C7E2BD00E15781 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5E5E321C7E2BD00E15781 /* IBAnimatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IBAnimatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5E5E521C7E2BD00E15781 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5E5E721C7E2BD00E15781 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5E5E921C7E2BD00E15781 /* Material.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Material.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5E5EB21C7E2BD00E15781 /* Motion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Motion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B5E5ED21C7E2BD00E15781 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +90,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81ADB94320C14DE7002B0E1F /* FirebaseDatabase.framework in Frameworks */,
+				E7B22578221BC0590094A1DB /* Differentiator.framework in Frameworks */,
+				E7B2257A221BC0590094A1DB /* FirebaseFirestore.framework in Frameworks */,
+				E7B2257C221BC0590094A1DB /* FirebaseStorage.framework in Frameworks */,
+				E7B22582221BC0590094A1DB /* openssl_grpc.framework in Frameworks */,
+				E7B22584221BC0590094A1DB /* Pring.framework in Frameworks */,
+				E7B22586221BC0590094A1DB /* Protobuf.framework in Frameworks */,
+				E7B2258A221BC0590094A1DB /* RxCocoa.framework in Frameworks */,
+				E7B2258C221BC0590094A1DB /* RxDataSources.framework in Frameworks */,
+				E7B22590221BC0590094A1DB /* RxSwift.framework in Frameworks */,
+				E75CD58221CE726F00438BAA /* TextFieldEffects.framework in Frameworks */,
+				E7B5E5E221C7E2BD00E15781 /* GTMSessionFetcher.framework in Frameworks */,
+				E7B5E5E621C7E2BD00E15781 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				E7B5E5E821C7E2BD00E15781 /* leveldb.framework in Frameworks */,
+				E7B5E5EA21C7E2BD00E15781 /* Material.framework in Frameworks */,
+				E7B5E5EC21C7E2BD00E15781 /* Motion.framework in Frameworks */,
+				E7B5E5EE21C7E2BD00E15781 /* nanopb.framework in Frameworks */,
 				81ADB94120C145E4002B0E1F /* FirebaseAuth.framework in Frameworks */,
 				81ADB93620C13A71002B0E1F /* FirebaseCore.framework in Frameworks */,
 				E787AF1820C021D50096796A /* MapKit.framework in Frameworks */,
@@ -71,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				81ADB93E20C13F97002B0E1F /* FirstViewController.swift */,
-				E787AF2120C044570096796A /* TableViewController.swift */,
+				E7B22570221BBABE0094A1DB /* TimelineVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -97,14 +155,16 @@
 		E787AEFF20C01D2C0096796A /* Pachi */ = {
 			isa = PBXGroup;
 			children = (
+				E7B22572221BBFA30094A1DB /* Model */,
 				81ADB93920C13BD8002B0E1F /* Controller */,
 				E787AF0020C01D2C0096796A /* AppDelegate.swift */,
-				E787AF0220C01D2C0096796A /* ViewController.swift */,
 				E787AF0420C01D2C0096796A /* Main.storyboard */,
-				E787AF2320C04A950096796A /* TableViewCell.swift */,
+				E75CD57F21CDD4EA00438BAA /* Tab1.storyboard */,
 				E787AF0720C01D2D0096796A /* Assets.xcassets */,
 				E787AF0C20C01D2D0096796A /* Info.plist */,
-				81ADB93720C13B9C002B0E1F /* GoogleService-Info.plist */,
+				E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */,
+				E7B22591221BD4AA0094A1DB /* PostViewCell.swift */,
+				E7B22593221BD5140094A1DB /* PostViewCell.xib */,
 			);
 			path = Pachi;
 			sourceTree = "<group>";
@@ -112,6 +172,28 @@
 		E787AF1620C021D50096796A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7B22577221BC0590094A1DB /* Differentiator.framework */,
+				E7B22579221BC0590094A1DB /* FirebaseFirestore.framework */,
+				E7B2257B221BC0590094A1DB /* FirebaseStorage.framework */,
+				E7B2257D221BC0590094A1DB /* grpc.framework */,
+				E7B2257F221BC0590094A1DB /* GRPCClient.framework */,
+				E7B22581221BC0590094A1DB /* openssl_grpc.framework */,
+				E7B22583221BC0590094A1DB /* Pring.framework */,
+				E7B22585221BC0590094A1DB /* Protobuf.framework */,
+				E7B22587221BC0590094A1DB /* ProtoRPC.framework */,
+				E7B22589221BC0590094A1DB /* RxCocoa.framework */,
+				E7B2258B221BC0590094A1DB /* RxDataSources.framework */,
+				E7B2258D221BC0590094A1DB /* RxLibrary.framework */,
+				E7B2258F221BC0590094A1DB /* RxSwift.framework */,
+				E75CD58121CE726F00438BAA /* TextFieldEffects.framework */,
+				E7B5E5DF21C7E2BD00E15781 /* GoogleToolboxForMac.framework */,
+				E7B5E5E121C7E2BD00E15781 /* GTMSessionFetcher.framework */,
+				E7B5E5E321C7E2BD00E15781 /* IBAnimatable.framework */,
+				E7B5E5E521C7E2BD00E15781 /* IQKeyboardManagerSwift.framework */,
+				E7B5E5E721C7E2BD00E15781 /* leveldb.framework */,
+				E7B5E5E921C7E2BD00E15781 /* Material.framework */,
+				E7B5E5EB21C7E2BD00E15781 /* Motion.framework */,
+				E7B5E5ED21C7E2BD00E15781 /* nanopb.framework */,
 				81ADB94220C14DE7002B0E1F /* FirebaseDatabase.framework */,
 				81ADB94020C145E4002B0E1F /* FirebaseAuth.framework */,
 				81ADB93520C13A71002B0E1F /* FirebaseCore.framework */,
@@ -119,6 +201,15 @@
 				E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7B22572221BBFA30094A1DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7B22573221BBFD60094A1DB /* Post.swift */,
+				E7B22575221BC02E0094A1DB /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +275,9 @@
 			files = (
 				E787AF0820C01D2D0096796A /* Assets.xcassets in Resources */,
 				E787AF0620C01D2C0096796A /* Main.storyboard in Resources */,
-				81ADB93820C13B9C002B0E1F /* GoogleService-Info.plist in Resources */,
+				E75CD58021CDD4EA00438BAA /* Tab1.storyboard in Resources */,
+				E7B22594221BD5140094A1DB /* PostViewCell.xib in Resources */,
+				E7B5E5D021BE628A00E15781 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,22 +308,46 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Pachi/Pods-Pachi-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Pachi/Pods-Pachi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pachi/Pods-Pachi-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pachi/Pods-Pachi-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -240,11 +357,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B22592221BD4AA0094A1DB /* PostViewCell.swift in Sources */,
 				81ADB93F20C13F97002B0E1F /* FirstViewController.swift in Sources */,
-				E787AF0320C01D2C0096796A /* ViewController.swift in Sources */,
-				E787AF2420C04A950096796A /* TableViewCell.swift in Sources */,
-				E787AF2220C044570096796A /* TableViewController.swift in Sources */,
 				E787AF0120C01D2C0096796A /* AppDelegate.swift in Sources */,
+				E7B22571221BBABE0094A1DB /* TimelineVC.swift in Sources */,
+				E7B22576221BC02E0094A1DB /* User.swift in Sources */,
+				E7B22574221BBFD60094A1DB /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,13 +501,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BNL83ELV8L;
+				DEVELOPMENT_TEAM = PCP7FZ8294;
 				INFOPLIST_FILE = Pachi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.go-aquarion0454.Pachi";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.go-aquarion0454.Pachibase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -405,13 +523,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BNL83ELV8L;
+				DEVELOPMENT_TEAM = PCP7FZ8294;
 				INFOPLIST_FILE = Pachi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.go-aquarion0454.Pachi";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.go-aquarion0454.Pachibase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
