@@ -9,11 +9,13 @@
 import UIKit
 import Pring
 import SilentScrolly
+import CoreLocation
 
 class TimelineVC: UIViewController, SilentScrollable {
     
     var silentScrolly: SilentScrolly?
-    var dataSource: DataSource<User>?
+    var dataSource: DataSource<Post>?
+    var locationManager: CLLocationManager!
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
@@ -24,7 +26,8 @@ class TimelineVC: UIViewController, SilentScrollable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataSource = User.order(by: \User.createdAt).limit(to: 30).dataSource()
+        setupLocationManager()
+        self.dataSource = Post.order(by: \Post.createdAt).limit(to: 30).dataSource()
             .on({ [weak self] (snapshot, changes) in
                 guard let tableView = self?.tableView else { return }
                 switch changes {
@@ -68,9 +71,10 @@ class TimelineVC: UIViewController, SilentScrollable {
     }
     
     @IBAction func add(_ sender: UIBarButtonItem) {
-        let user = User()
-        user.name = "てすと"
-        user.save()
+        let post = Post()
+        post.latitude = 35.2323
+        post.longitude = 139.232
+        post.save()
     }
     
     
@@ -93,11 +97,12 @@ extension TimelineVC : UITableViewDataSource {
     }
     
     func configure(_ cell: PostViewCell, atIndexPath indexPath: IndexPath) {
-        guard let user: User = self.dataSource?[indexPath.item] else { return }
-    
-        cell.subjectLabel?.text = user.name
-        cell.disposer = user.listen { (user, error) in
-            cell.subjectLabel?.text = user?.name
+        guard let post: Post = self.dataSource?[indexPath.item] else { return }
+        cell.subjectLabel?.text = post.latitude.description
+        cell.bodyLabel?.text = post.longitude.description
+        cell.disposer = post.listen { (user, error) in
+            cell.subjectLabel?.text = post.latitude.description
+            cell.bodyLabel?.text = post.longitude.description
         }
     }
     
@@ -105,15 +110,15 @@ extension TimelineVC : UITableViewDataSource {
         cell.disposer?.dispose()
     }
     
-//    func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-//        return true
-//    }
-//
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
-//            self.dataSource?.removeDocument(at: indexPath.item)
-//        }
-//    }
+    func tableView(_ tableView: UITableView, canPerformAction action: Selector, forRowAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.dataSource?.removeDocument(at: indexPath.item)
+        }
+    }
     //セルの高さ
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 450
@@ -138,5 +143,21 @@ extension TimelineVC : UITableViewDelegate {
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         silentDidScroll()
+    }
+}
+
+extension TimelineVC: CLLocationManagerDelegate {
+    // 位置情報セッティング
+    func setupLocationManager() {
+        locationManager = CLLocationManager()
+        guard let locationManager = locationManager else { return }
+        locationManager.requestWhenInUseAuthorization()
+        
+        let status = CLLocationManager.authorizationStatus()
+        if status == .authorizedWhenInUse {
+            locationManager.delegate = self
+            locationManager.distanceFilter = 10
+            locationManager.startUpdatingLocation()
+        }
     }
 }

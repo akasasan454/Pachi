@@ -11,7 +11,7 @@ import Pring
 
 class PostViewCell: UITableViewCell {
     
-    var disposer: Disposer<User>?
+    var disposer: Disposer<Post>?
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!

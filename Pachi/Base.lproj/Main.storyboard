@@ -67,22 +67,6 @@
             </objects>
             <point key="canvasLocation" x="-3268" y="-396"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="SsQ-Ov-2ic">
-            <objects>
-                <navigationController id="bHp-YI-mis" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nUQ-6H-lHw">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="VDT-bt-yXu" kind="relationship" relationship="rootViewController" id="QeI-cP-06t"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yzO-hK-jsl" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1471" y="-396"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U8N-9Y-8Uu">
             <objects>
@@ -100,22 +84,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhS-o6-uBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2441" y="-396"/>
-        </scene>
-        <!--Button Bar Pager Tab View Controller-->
-        <scene sceneID="dgz-jy-rD5">
-            <objects>
-                <viewController id="VDT-bt-yXu" customClass="ButtonBarPagerTabViewController" customModule="Pachi" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="37a-Kg-rJa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="yHs-0d-qzl"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="IhE-bX-rAA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lQs-uk-4ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-618.39999999999998" y="-396.25187406296857"/>
         </scene>
         <!--Tab1-->
         <scene sceneID="Qg0-Yw-7Yk">
@@ -135,7 +103,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uP6-gs-eiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2278" y="90"/>
+            <point key="canvasLocation" x="-2325" y="85"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="b8j-8w-zY4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Post" id="gG4-hG-j4r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="v6j-46-CPE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Uv-T5-3HE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2041" y="85"/>
         </scene>
     </scenes>
 </document>

@@ -16,8 +16,7 @@ target 'Pachi' do
   pod 'RxCocoa'
   pod 'RxDataSources'
   pod 'Pring'
-  pod 'VegaScrollFlowLayout'
   pod 'SilentScrolly'
-  pod 'XLPagerTabStrip', '~> 8.1'
-  pod 'TransitionableTab', '~> 0.2.0'
+  pod 'UIView+MGBadgeView'
+  pod 'YPImagePicker'
 end

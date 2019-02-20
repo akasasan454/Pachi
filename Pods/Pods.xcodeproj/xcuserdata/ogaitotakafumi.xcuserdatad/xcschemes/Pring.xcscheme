@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3D4BD2E62DC82147FADEF16E995DDAF"
+               BlueprintIdentifier = "17F1E6EAB26790C6EDC362F69EFC84E0"
                BlueprintName = "Pring"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pring.framework">

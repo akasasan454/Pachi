@@ -122,6 +122,7 @@ PODS:
     - Firebase/Firestore
     - Firebase/Storage
   - Protobuf (3.6.1)
+  - PryntTrimmerView (3.0.0)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxDataSources (3.1.0):
@@ -130,10 +131,12 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
   - SilentScrolly (1.0.8)
+  - SteviaLayout (4.4.3)
   - TextFieldEffects (1.5.1)
-  - TransitionableTab (0.2.0)
-  - VegaScrollFlowLayout (1.1)
-  - XLPagerTabStrip (8.1.1)
+  - "UIView+MGBadgeView (0.0.1)"
+  - YPImagePicker (3.5.3):
+    - PryntTrimmerView (~> 3.0.0)
+    - SteviaLayout (~> 4.4.1)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -147,9 +150,8 @@ DEPENDENCIES:
   - RxSwift
   - SilentScrolly
   - TextFieldEffects
-  - TransitionableTab (~> 0.2.0)
-  - VegaScrollFlowLayout
-  - XLPagerTabStrip (~> 8.1)
+  - "UIView+MGBadgeView"
+  - YPImagePicker
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -175,14 +177,15 @@ SPEC REPOS:
     - nanopb
     - Pring
     - Protobuf
+    - PryntTrimmerView
     - RxCocoa
     - RxDataSources
     - RxSwift
     - SilentScrolly
+    - SteviaLayout
     - TextFieldEffects
-    - TransitionableTab
-    - VegaScrollFlowLayout
-    - XLPagerTabStrip
+    - "UIView+MGBadgeView"
+    - YPImagePicker
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
@@ -207,15 +210,16 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Pring: 934abdeba2797a6b1b4fb94212c7d881291d46be
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  PryntTrimmerView: 53ac64053c7ce63cb3e27f54090f52da0734891d
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SilentScrolly: 0d85996304048c9e6c49788823c9c2a64185be76
+  SteviaLayout: ae5ee66101e03607a93c9b3773b84ab7ba7b3d17
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
-  TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
-  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
-  XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
+  "UIView+MGBadgeView": 49caf22454d35f042c798dc8ce27ca38fb6e7d2a
+  YPImagePicker: 5dd3814b47b1208e9c8cc8f6ef77fe90db3723b6
 
-PODFILE CHECKSUM: b60d1b644b330b04ceb977fb6cc559cdb87cb1f1
+PODFILE CHECKSUM: b9bfe5abc6f16cc4e6b61c4cd16eba048766129b
 
 COCOAPODS: 1.6.0

@@ -31,12 +31,14 @@
 		E7B22590221BC0590094A1DB /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B2258F221BC0590094A1DB /* RxSwift.framework */; };
 		E7B22592221BD4AA0094A1DB /* PostViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B22591221BD4AA0094A1DB /* PostViewCell.swift */; };
 		E7B22594221BD5140094A1DB /* PostViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B22593221BD5140094A1DB /* PostViewCell.xib */; };
-		E7B22598221CE45C0094A1DB /* XLPagerTabStrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B22597221CE45C0094A1DB /* XLPagerTabStrip.framework */; };
-		E7B2259A221CE6550094A1DB /* ButtonBarPagerTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B22599221CE6550094A1DB /* ButtonBarPagerTabViewController.swift */; };
 		E7B2259E221D14370094A1DB /* SilentScrolly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B2259D221D14370094A1DB /* SilentScrolly.framework */; };
 		E7B225A0221D1BA30094A1DB /* Tab2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B2259F221D1BA30094A1DB /* Tab2.storyboard */; };
-		E7B225A2221D209D0094A1DB /* TransitionableTab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225A1221D209D0094A1DB /* TransitionableTab.framework */; };
 		E7B225A4221D20CF0094A1DB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B225A3221D20CF0094A1DB /* TabBarController.swift */; };
+		E7B225A8221D29520094A1DB /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B225A7221D29520094A1DB /* Post.storyboard */; };
+		E7B225AA221D2BA70094A1DB /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B225A9221D2BA70094A1DB /* MapVC.swift */; };
+		E7B225AC221D4C880094A1DB /* UIView_MGBadgeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225AB221D4C880094A1DB /* UIView_MGBadgeView.framework */; };
+		E7B225AE221D6B490094A1DB /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B225AD221D6B490094A1DB /* CustomAnnotation.swift */; };
+		E7B225B0221D81B80094A1DB /* YPImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225AF221D81B80094A1DB /* YPImagePicker.framework */; };
 		E7B5E5D021BE628A00E15781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */; };
 		E7B5E5E221C7E2BD00E15781 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E121C7E2BD00E15781 /* GTMSessionFetcher.framework */; };
 		E7B5E5E621C7E2BD00E15781 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E521C7E2BD00E15781 /* IQKeyboardManagerSwift.framework */; };
@@ -82,12 +84,17 @@
 		E7B22593221BD5140094A1DB /* PostViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewCell.xib; sourceTree = "<group>"; };
 		E7B22595221CD9780094A1DB /* AMScrollingNavbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AMScrollingNavbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B22597221CE45C0094A1DB /* XLPagerTabStrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XLPagerTabStrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7B22599221CE6550094A1DB /* ButtonBarPagerTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBarPagerTabViewController.swift; sourceTree = "<group>"; };
 		E7B2259B221D06F20094A1DB /* HidingNavigationBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HidingNavigationBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B2259D221D14370094A1DB /* SilentScrolly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SilentScrolly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B2259F221D1BA30094A1DB /* Tab2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab2.storyboard; sourceTree = "<group>"; };
 		E7B225A1221D209D0094A1DB /* TransitionableTab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TransitionableTab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B225A3221D20CF0094A1DB /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E7B225A5221D26230094A1DB /* MMTabBarAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMTabBarAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225A7221D29520094A1DB /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		E7B225A9221D2BA70094A1DB /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		E7B225AB221D4C880094A1DB /* UIView_MGBadgeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIView_MGBadgeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225AD221D6B490094A1DB /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		E7B225AF221D81B80094A1DB /* YPImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YPImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7B5E5DF21C7E2BD00E15781 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B5E5E121C7E2BD00E15781 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,10 +111,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B225A2221D209D0094A1DB /* TransitionableTab.framework in Frameworks */,
+				E7B225B0221D81B80094A1DB /* YPImagePicker.framework in Frameworks */,
+				E7B225AC221D4C880094A1DB /* UIView_MGBadgeView.framework in Frameworks */,
 				E787AF1820C021D50096796A /* MapKit.framework in Frameworks */,
 				E7B2259E221D14370094A1DB /* SilentScrolly.framework in Frameworks */,
-				E7B22598221CE45C0094A1DB /* XLPagerTabStrip.framework in Frameworks */,
 				E7B22578221BC0590094A1DB /* Differentiator.framework in Frameworks */,
 				E7B2257A221BC0590094A1DB /* FirebaseFirestore.framework in Frameworks */,
 				E7B2257C221BC0590094A1DB /* FirebaseStorage.framework in Frameworks */,
@@ -148,6 +155,7 @@
 				81ADB93E20C13F97002B0E1F /* FirstViewController.swift */,
 				E7B22570221BBABE0094A1DB /* TimelineVC.swift */,
 				E7B225A3221D20CF0094A1DB /* TabBarController.swift */,
+				E7B225A9221D2BA70094A1DB /* MapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,13 +186,14 @@
 				E787AF0020C01D2C0096796A /* AppDelegate.swift */,
 				E787AF0420C01D2C0096796A /* Main.storyboard */,
 				E75CD57F21CDD4EA00438BAA /* Tab1.storyboard */,
+				E7B225A7221D29520094A1DB /* Post.storyboard */,
 				E7B2259F221D1BA30094A1DB /* Tab2.storyboard */,
 				E787AF0720C01D2D0096796A /* Assets.xcassets */,
 				E787AF0C20C01D2D0096796A /* Info.plist */,
 				E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */,
 				E7B22591221BD4AA0094A1DB /* PostViewCell.swift */,
 				E7B22593221BD5140094A1DB /* PostViewCell.xib */,
-				E7B22599221CE6550094A1DB /* ButtonBarPagerTabViewController.swift */,
+				E7B225AD221D6B490094A1DB /* CustomAnnotation.swift */,
 			);
 			path = Pachi;
 			sourceTree = "<group>";
@@ -192,6 +201,9 @@
 		E787AF1620C021D50096796A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7B225AF221D81B80094A1DB /* YPImagePicker.framework */,
+				E7B225AB221D4C880094A1DB /* UIView_MGBadgeView.framework */,
+				E7B225A5221D26230094A1DB /* MMTabBarAnimation.framework */,
 				E7B225A1221D209D0094A1DB /* TransitionableTab.framework */,
 				E7B2259D221D14370094A1DB /* SilentScrolly.framework */,
 				E7B2259B221D06F20094A1DB /* HidingNavigationBar.framework */,
@@ -303,6 +315,7 @@
 				E75CD58021CDD4EA00438BAA /* Tab1.storyboard in Resources */,
 				E7B225A0221D1BA30094A1DB /* Tab2.storyboard in Resources */,
 				E7B22594221BD5140094A1DB /* PostViewCell.xib in Resources */,
+				E7B225A8221D29520094A1DB /* Post.storyboard in Resources */,
 				E7B5E5D021BE628A00E15781 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,14 +356,15 @@
 				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
 				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SilentScrolly/SilentScrolly.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
 				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
-				"${BUILT_PRODUCTS_DIR}/TransitionableTab/TransitionableTab.framework",
-				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+				"${BUILT_PRODUCTS_DIR}/UIView+MGBadgeView/UIView_MGBadgeView.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -366,14 +380,15 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SilentScrolly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TransitionableTab.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIView_MGBadgeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -391,12 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B2259A221CE6550094A1DB /* ButtonBarPagerTabViewController.swift in Sources */,
 				E7B225A4221D20CF0094A1DB /* TabBarController.swift in Sources */,
 				E7B22592221BD4AA0094A1DB /* PostViewCell.swift in Sources */,
+				E7B225AE221D6B490094A1DB /* CustomAnnotation.swift in Sources */,
 				81ADB93F20C13F97002B0E1F /* FirstViewController.swift in Sources */,
 				E787AF0120C01D2C0096796A /* AppDelegate.swift in Sources */,
 				E7B22571221BBABE0094A1DB /* TimelineVC.swift in Sources */,
+				E7B225AA221D2BA70094A1DB /* MapVC.swift in Sources */,
 				E7B22576221BC02E0094A1DB /* User.swift in Sources */,
 				E7B22574221BBFD60094A1DB /* Post.swift in Sources */,
 			);

@@ -1,0 +1,6 @@
+framework module UIView_MGBadgeView {
+  umbrella header "UIView+MGBadgeView-umbrella.h"
+
+  export *
+  module * { export * }
+}

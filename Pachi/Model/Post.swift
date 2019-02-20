@@ -14,6 +14,6 @@ class Post: Object {
     dynamic var subject: String?
     dynamic var body: String?
     dynamic var user: User?
-    dynamic var latitude: String?
-    dynamic var longitude: String?
+    dynamic var latitude: Double = 0
+    dynamic var longitude: Double = 0
 }
