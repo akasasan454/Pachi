@@ -129,7 +129,10 @@ PODS:
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
+  - SilentScrolly (1.0.8)
   - TextFieldEffects (1.5.1)
+  - VegaScrollFlowLayout (1.1)
+  - XLPagerTabStrip (8.1.1)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -141,7 +144,10 @@ DEPENDENCIES:
   - RxCocoa
   - RxDataSources
   - RxSwift
+  - SilentScrolly
   - TextFieldEffects
+  - VegaScrollFlowLayout
+  - XLPagerTabStrip (~> 8.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -170,7 +176,10 @@ SPEC REPOS:
     - RxCocoa
     - RxDataSources
     - RxSwift
+    - SilentScrolly
     - TextFieldEffects
+    - VegaScrollFlowLayout
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
@@ -198,8 +207,11 @@ SPEC CHECKSUMS:
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SilentScrolly: 0d85996304048c9e6c49788823c9c2a64185be76
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
+  XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: 72c1a525b518b6c21ebc8d65d7e504a85e11d1b3
+PODFILE CHECKSUM: e094def7065220b2a8d53a071588cdf6e1816232
 
 COCOAPODS: 1.6.0

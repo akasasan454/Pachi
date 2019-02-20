@@ -13,26 +13,34 @@
         <!--TimelineVC-->
         <scene sceneID="tCN-cI-lHr">
             <objects>
-                <viewController id="1k8-NK-6b6" customClass="TimelineVC" customModule="Pachi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimelineVC" id="1k8-NK-6b6" customClass="TimelineVC" customModule="Pachi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BwR-2g-hTe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="mOl-7j-SJc">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="mOl-7j-SJc" firstAttribute="bottom" secondItem="YXn-f6-M74" secondAttribute="bottom" id="5PG-Pq-YJd"/>
-                            <constraint firstItem="mOl-7j-SJc" firstAttribute="trailing" secondItem="YXn-f6-M74" secondAttribute="trailing" id="QBl-Zf-9VF"/>
-                            <constraint firstItem="mOl-7j-SJc" firstAttribute="top" secondItem="YXn-f6-M74" secondAttribute="top" id="iUh-ee-VLE"/>
-                            <constraint firstItem="mOl-7j-SJc" firstAttribute="leading" secondItem="YXn-f6-M74" secondAttribute="leading" id="nqb-aE-s6o"/>
+                            <constraint firstItem="mOl-7j-SJc" firstAttribute="trailing" secondItem="YXn-f6-M74" secondAttribute="trailing" id="9aL-PJ-H0l"/>
+                            <constraint firstItem="mOl-7j-SJc" firstAttribute="trailing" secondItem="YXn-f6-M74" secondAttribute="trailing" id="JYF-Qh-DXi"/>
+                            <constraint firstAttribute="bottom" secondItem="mOl-7j-SJc" secondAttribute="bottom" id="UOS-8Y-rnk"/>
+                            <constraint firstAttribute="bottom" secondItem="mOl-7j-SJc" secondAttribute="bottom" id="diO-a5-XpR"/>
+                            <constraint firstItem="mOl-7j-SJc" firstAttribute="top" secondItem="BwR-2g-hTe" secondAttribute="top" id="rT2-BD-gid"/>
+                            <constraint firstItem="mOl-7j-SJc" firstAttribute="leading" secondItem="YXn-f6-M74" secondAttribute="leading" id="sHn-w0-mVS"/>
+                            <constraint firstItem="mOl-7j-SJc" firstAttribute="leading" secondItem="YXn-f6-M74" secondAttribute="leading" id="tOt-b4-aYo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YXn-f6-M74"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="h7V-hR-hPc"/>
-                    <navigationItem key="navigationItem" id="txz-qm-QU0"/>
+                    <navigationItem key="navigationItem" id="txz-qm-QU0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dfx-SE-Wke">
+                            <connections>
+                                <action selector="add:" destination="1k8-NK-6b6" id="f2p-Rx-FuG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="mOl-7j-SJc" id="PwJ-z5-e9Q"/>
@@ -45,6 +53,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Dev-5y-CXc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60d-WJ-Rga" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eKJ-rw-ZcM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hol-7z-3FS">
@@ -53,10 +62,9 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="1k8-NK-6b6" kind="relationship" relationship="rootViewController" id="noH-sO-fHx"/>
+                        <segue destination="1k8-NK-6b6" kind="relationship" relationship="rootViewController" id="mKI-3i-zYf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="60d-WJ-Rga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="77.599999999999994" y="119.1904047976012"/>
         </scene>

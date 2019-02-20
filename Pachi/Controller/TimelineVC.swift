@@ -8,20 +8,22 @@
 
 import UIKit
 import Pring
+import SilentScrolly
 
-class TimelineVC: UIViewController {
+class TimelineVC: UIViewController, SilentScrollable {
     
+    var silentScrolly: SilentScrolly?
     var dataSource: DataSource<User>?
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.dataSource = self
+            tableView.delegate = self
+            tableView.register(UINib(nibName: "PostViewCell", bundle: nil), forCellReuseIdentifier: "PostViewCell")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let user = User()
-//        user.name = "てすと"
-//        user.save()
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UINib(nibName: "PostViewCell", bundle: nil), forCellReuseIdentifier: "PostViewCell")
         self.dataSource = User.order(by: \User.createdAt).limit(to: 30).dataSource()
             .on({ [weak self] (snapshot, changes) in
                 guard let tableView = self?.tableView else { return }
@@ -39,6 +41,39 @@ class TimelineVC: UIViewController {
                 }
             }).listen()
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        silentDidLayoutSubviews()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        configureSilentScrolly(tableView, followBottomView: tabBarController?.tabBar)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        silentWillDisappear()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        silentDidDisappear()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        silentWillTranstion()
+    }
+    
+    @IBAction func add(_ sender: UIBarButtonItem) {
+        let user = User()
+        user.name = "てすと"
+        user.save()
+    }
+    
+    
 }
 
 extension TimelineVC : UITableViewDataSource {
@@ -100,6 +135,8 @@ extension TimelineVC : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return .leastNormalMagnitude
     }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        silentDidScroll()
+    }
 }
-
-

@@ -16,4 +16,7 @@ target 'Pachi' do
   pod 'RxCocoa'
   pod 'RxDataSources'
   pod 'Pring'
+  pod 'VegaScrollFlowLayout'
+  pod 'SilentScrolly'
+  pod 'XLPagerTabStrip', '~> 8.1'
 end
