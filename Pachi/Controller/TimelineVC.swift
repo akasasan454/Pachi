@@ -116,7 +116,7 @@ extension TimelineVC : UITableViewDataSource {
 //    }
     //セルの高さ
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 430
+        return 450
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

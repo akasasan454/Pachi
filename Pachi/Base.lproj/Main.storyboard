@@ -94,11 +94,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="wZx-Vm-kRO" kind="relationship" relationship="viewControllers" id="8xA-gA-JRL"/>
+                        <segue destination="LwW-eO-rnC" kind="relationship" relationship="viewControllers" id="1jg-mA-9Ex"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhS-o6-uBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2444" y="-396"/>
+            <point key="canvasLocation" x="-2441" y="-396"/>
         </scene>
         <!--Button Bar Pager Tab View Controller-->
         <scene sceneID="dgz-jy-rD5">
@@ -125,6 +126,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vl-bn-HSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2593" y="94"/>
+        </scene>
+        <!--Tab2-->
+        <scene sceneID="hDP-Ub-lQQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tab2" id="LwW-eO-rnC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zcX-Kt-9PQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uP6-gs-eiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2278" y="90"/>
         </scene>
     </scenes>
 </document>

@@ -34,6 +34,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YXn-f6-M74"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="Nhe-5u-9dp"/>
                     <navigationItem key="navigationItem" id="txz-qm-QU0">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Dfx-SE-Wke">
                             <connections>

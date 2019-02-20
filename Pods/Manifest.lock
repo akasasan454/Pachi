@@ -131,6 +131,7 @@ PODS:
   - RxSwift (4.3.1)
   - SilentScrolly (1.0.8)
   - TextFieldEffects (1.5.1)
+  - TransitionableTab (0.2.0)
   - VegaScrollFlowLayout (1.1)
   - XLPagerTabStrip (8.1.1)
 
@@ -146,6 +147,7 @@ DEPENDENCIES:
   - RxSwift
   - SilentScrolly
   - TextFieldEffects
+  - TransitionableTab (~> 0.2.0)
   - VegaScrollFlowLayout
   - XLPagerTabStrip (~> 8.1)
 
@@ -178,6 +180,7 @@ SPEC REPOS:
     - RxSwift
     - SilentScrolly
     - TextFieldEffects
+    - TransitionableTab
     - VegaScrollFlowLayout
     - XLPagerTabStrip
 
@@ -209,9 +212,10 @@ SPEC CHECKSUMS:
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SilentScrolly: 0d85996304048c9e6c49788823c9c2a64185be76
   TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
+  TransitionableTab: 54a5d0af475033bdb83959fde4e5d6201af7e2ab
   VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
   XLPagerTabStrip: 63166e21c9844fa30f2d95d30f335e73be5caf22
 
-PODFILE CHECKSUM: e094def7065220b2a8d53a071588cdf6e1816232
+PODFILE CHECKSUM: b60d1b644b330b04ceb977fb6cc559cdb87cb1f1
 
 COCOAPODS: 1.6.0
