@@ -12,7 +12,6 @@
 		81ADB94120C145E4002B0E1F /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ADB94020C145E4002B0E1F /* FirebaseAuth.framework */; };
 		A7DABECBE226F2AA0A54CAA0 /* Pods_Pachi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51025E756D547E5BC23DA3B /* Pods_Pachi.framework */; };
 		E75CD58021CDD4EA00438BAA /* Tab1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75CD57F21CDD4EA00438BAA /* Tab1.storyboard */; };
-		E75CD58221CE726F00438BAA /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E75CD58121CE726F00438BAA /* TextFieldEffects.framework */; };
 		E787AF0120C01D2C0096796A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E787AF0020C01D2C0096796A /* AppDelegate.swift */; };
 		E787AF0620C01D2C0096796A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E787AF0420C01D2C0096796A /* Main.storyboard */; };
 		E787AF0820C01D2D0096796A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E787AF0720C01D2D0096796A /* Assets.xcassets */; };
@@ -38,13 +37,14 @@
 		E7B225AA221D2BA70094A1DB /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B225A9221D2BA70094A1DB /* MapVC.swift */; };
 		E7B225AC221D4C880094A1DB /* UIView_MGBadgeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225AB221D4C880094A1DB /* UIView_MGBadgeView.framework */; };
 		E7B225AE221D6B490094A1DB /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B225AD221D6B490094A1DB /* CustomAnnotation.swift */; };
-		E7B225B0221D81B80094A1DB /* YPImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225AF221D81B80094A1DB /* YPImagePicker.framework */; };
+		E7B225B8221E7A2B0094A1DB /* PryntTrimmerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225B7221E7A2B0094A1DB /* PryntTrimmerView.framework */; };
+		E7B225BA221E7A2B0094A1DB /* Stevia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225B9221E7A2B0094A1DB /* Stevia.framework */; };
+		E7B225BC221E7A2B0094A1DB /* YPImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225BB221E7A2B0094A1DB /* YPImagePicker.framework */; };
+		E7B225BE221E92900094A1DB /* FirebaseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225BD221E92900094A1DB /* FirebaseUI.framework */; };
+		E7B225C0221E92900094A1DB /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B225BF221E92900094A1DB /* SDWebImage.framework */; };
 		E7B5E5D021BE628A00E15781 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */; };
 		E7B5E5E221C7E2BD00E15781 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E121C7E2BD00E15781 /* GTMSessionFetcher.framework */; };
-		E7B5E5E621C7E2BD00E15781 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E521C7E2BD00E15781 /* IQKeyboardManagerSwift.framework */; };
 		E7B5E5E821C7E2BD00E15781 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E721C7E2BD00E15781 /* leveldb.framework */; };
-		E7B5E5EA21C7E2BD00E15781 /* Material.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5E921C7E2BD00E15781 /* Material.framework */; };
-		E7B5E5EC21C7E2BD00E15781 /* Motion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5EB21C7E2BD00E15781 /* Motion.framework */; };
 		E7B5E5EE21C7E2BD00E15781 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B5E5ED21C7E2BD00E15781 /* nanopb.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +95,14 @@
 		E7B225AB221D4C880094A1DB /* UIView_MGBadgeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIView_MGBadgeView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B225AD221D6B490094A1DB /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
 		E7B225AF221D81B80094A1DB /* YPImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YPImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225B1221D83EA0094A1DB /* PryntTrimmerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PryntTrimmerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225B3221D83EA0094A1DB /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225B5221D83EA0094A1DB /* YPImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YPImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225B7221E7A2B0094A1DB /* PryntTrimmerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PryntTrimmerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225B9221E7A2B0094A1DB /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stevia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225BB221E7A2B0094A1DB /* YPImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YPImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225BD221E92900094A1DB /* FirebaseUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B225BF221E92900094A1DB /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B5E5CF21BE628A00E15781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7B5E5DF21C7E2BD00E15781 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B5E5E121C7E2BD00E15781 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +119,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B225B0221D81B80094A1DB /* YPImagePicker.framework in Frameworks */,
+				E7B225BE221E92900094A1DB /* FirebaseUI.framework in Frameworks */,
+				E7B225C0221E92900094A1DB /* SDWebImage.framework in Frameworks */,
+				E7B225B8221E7A2B0094A1DB /* PryntTrimmerView.framework in Frameworks */,
+				E7B225BA221E7A2B0094A1DB /* Stevia.framework in Frameworks */,
+				E7B225BC221E7A2B0094A1DB /* YPImagePicker.framework in Frameworks */,
 				E7B225AC221D4C880094A1DB /* UIView_MGBadgeView.framework in Frameworks */,
 				E787AF1820C021D50096796A /* MapKit.framework in Frameworks */,
 				E7B2259E221D14370094A1DB /* SilentScrolly.framework in Frameworks */,
@@ -124,12 +136,8 @@
 				E7B2258A221BC0590094A1DB /* RxCocoa.framework in Frameworks */,
 				E7B2258C221BC0590094A1DB /* RxDataSources.framework in Frameworks */,
 				E7B22590221BC0590094A1DB /* RxSwift.framework in Frameworks */,
-				E75CD58221CE726F00438BAA /* TextFieldEffects.framework in Frameworks */,
 				E7B5E5E221C7E2BD00E15781 /* GTMSessionFetcher.framework in Frameworks */,
-				E7B5E5E621C7E2BD00E15781 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				E7B5E5E821C7E2BD00E15781 /* leveldb.framework in Frameworks */,
-				E7B5E5EA21C7E2BD00E15781 /* Material.framework in Frameworks */,
-				E7B5E5EC21C7E2BD00E15781 /* Motion.framework in Frameworks */,
 				E7B5E5EE21C7E2BD00E15781 /* nanopb.framework in Frameworks */,
 				81ADB94120C145E4002B0E1F /* FirebaseAuth.framework in Frameworks */,
 				81ADB93620C13A71002B0E1F /* FirebaseCore.framework in Frameworks */,
@@ -201,6 +209,14 @@
 		E787AF1620C021D50096796A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E7B225BD221E92900094A1DB /* FirebaseUI.framework */,
+				E7B225BF221E92900094A1DB /* SDWebImage.framework */,
+				E7B225B7221E7A2B0094A1DB /* PryntTrimmerView.framework */,
+				E7B225B9221E7A2B0094A1DB /* Stevia.framework */,
+				E7B225BB221E7A2B0094A1DB /* YPImagePicker.framework */,
+				E7B225B1221D83EA0094A1DB /* PryntTrimmerView.framework */,
+				E7B225B3221D83EA0094A1DB /* Stevia.framework */,
+				E7B225B5221D83EA0094A1DB /* YPImagePicker.framework */,
 				E7B225AF221D81B80094A1DB /* YPImagePicker.framework */,
 				E7B225AB221D4C880094A1DB /* UIView_MGBadgeView.framework */,
 				E7B225A5221D26230094A1DB /* MMTabBarAnimation.framework */,
@@ -283,7 +299,7 @@
 				TargetAttributes = {
 					E787AEFC20C01D2C0096796A = {
 						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -352,17 +368,15 @@
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
-				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SilentScrolly/SilentScrolly.framework",
 				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
-				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/UIView+MGBadgeView/UIView_MGBadgeView.framework",
 				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -376,17 +390,15 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SilentScrolly.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIView_MGBadgeView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -563,7 +575,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -584,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.icloud.go-aquarion0454.Pachibase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

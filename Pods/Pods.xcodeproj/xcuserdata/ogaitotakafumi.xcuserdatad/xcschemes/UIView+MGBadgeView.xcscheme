@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4B64438E1E6906710AB4E866CE00B72B"
+               BlueprintIdentifier = "687C0D92C36A303086E366D8B8E7C6CA"
                BuildableName = "UIView_MGBadgeView.framework"
                BlueprintName = "UIView+MGBadgeView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4B64438E1E6906710AB4E866CE00B72B"
+            BlueprintIdentifier = "687C0D92C36A303086E366D8B8E7C6CA"
             BuildableName = "UIView_MGBadgeView.framework"
             BlueprintName = "UIView+MGBadgeView"
             ReferencedContainer = "container:Pods.xcodeproj">

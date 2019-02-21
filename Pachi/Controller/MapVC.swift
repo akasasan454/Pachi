@@ -11,6 +11,8 @@ import MapKit
 import Pring
 import CoreLocation
 import UIView_MGBadgeView
+import YPImagePicker
+import FirebaseUI
 
 class MapVC: UIViewController {
     
@@ -39,30 +41,27 @@ class MapVC: UIViewController {
         self.dataSource = Post.order(by: \Post.createdAt).limit(to: 30).dataSource()
             .onCompleted({ (snapshot, _) in
                 snapshot?.documentChanges.forEach { diff in
-                    let post = diff.document.data()
-                    guard let latitude = post["latitude"] as? Double,
-                        let longitude = post["longitude"] as? Double
-                        else { return }
-                    let post_id = diff.document.documentID
+                    guard let post = Post(snapshot: diff.document) else { return }
                     switch diff.type {
                     case .added:
                         let annotation = CustomAnnotation()
-                        annotation.id = post_id
-                        annotation.coordinate.latitude = latitude
-                        annotation.coordinate.longitude = longitude
+                        annotation.id = post.id
+                        annotation.url = post.image?.downloadURL
+                        annotation.coordinate.latitude = post.latitude
+                        annotation.coordinate.longitude = post.longitude
                         self.mapView.addAnnotation(annotation)
                     case .modified:
                         self.mapView.annotations.forEach {
-                            if let annotation = $0 as? CustomAnnotation, annotation.id == post_id, (annotation.coordinate.latitude != latitude || annotation.coordinate.longitude != longitude) {
-                                annotation.coordinate.latitude = latitude
-                                annotation.coordinate.longitude = longitude
+                            if let annotation = $0 as? CustomAnnotation, annotation.id == post.id, (annotation.coordinate.latitude != post.latitude || annotation.coordinate.longitude != post.longitude) {
+                                annotation.coordinate.latitude = post.latitude
+                                annotation.coordinate.longitude = post.longitude
                                 self.mapView.removeAnnotation(annotation)
                                 self.mapView.addAnnotation(annotation)
                             }
                         }
                     case .removed:
                         self.mapView.annotations.forEach {
-                            if let annotation = $0 as? CustomAnnotation, annotation.id == post_id {
+                            if let annotation = $0 as? CustomAnnotation, annotation.id == post.id {
                                 self.mapView.removeAnnotation(annotation)
                             }
                         }
@@ -85,76 +84,102 @@ class MapVC: UIViewController {
 
     @IBAction func post(_ sender: UIButton) {
         var config = YPImagePickerConfiguration()
-        config.library.maxNumberOfItems = 3
+        config.library.onlySquare = true
+        config.startOnScreen = .library
+        config.shouldSaveNewPicturesToAlbum = false
+        config.showsFilters = false
         let picker = YPImagePicker(configuration: config)
-        let post = Post()
-        let coodinate = mapView.centerCoordinate
-        post.latitude = coodinate.latitude
-        post.longitude = coodinate.longitude
-        post.save()
+        picker.didFinishPicking { [unowned picker] items, cancelled in
+            if !cancelled {
+//                var images: [File] = []
+//                for item in items {
+//                    switch item {
+//                    case .photo(let photo):
+//                        guard let imageData = photo.image.jpegData(compressionQuality: 1) else { return }
+//                        images.append(File(data: imageData, mimeType: .jpeg))
+//                    case .video(let video):
+//                        print(video)
+//                    }
+//                }
+                let post = Post()
+                if let image = items.singlePhoto?.image, let imageData = image.jpegData(compressionQuality: 1) {
+                    post.image = File(data: imageData, mimeType: .jpeg)
+                }
+                let coodinate = self.mapView.centerCoordinate
+                post.latitude = coodinate.latitude
+                post.longitude = coodinate.longitude
+                post.save()
+            }
+            picker.dismiss(animated: true, completion: nil)
+        }
+        present(picker, animated: true, completion: nil)
     }
     
+    func returnUrl(images: [[String: Any]]) -> String {
+        return (images.first!["url"] as? String)!
+    }
 }
 
 extension MapVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier, for: annotation)
         guard let makerAnnotationView = annotationView as? MKMarkerAnnotationView else { return MKAnnotationView() }
-        if makerAnnotationView.annotation?.title == "My Location" || makerAnnotationView.clusteringIdentifier == "MyLocation" {
-            makerAnnotationView.clusteringIdentifier = "MyLocation"
-            return makerAnnotationView
-        } else {
-            if let cluster = annotation as? MKClusterAnnotation {
-                // ImageView追加してバッジつける方
-                makerAnnotationView.subviews.forEach { $0.removeFromSuperview() }
-                makerAnnotationView.image = UIImage(named: "1")!.resize(size: CGSize(width: 60, height: 60))
-                
-                let imageView = UIImageView()
-                imageView.frame = makerAnnotationView.bounds
-                imageView.image = UIImage(named: "1")!.resize(size: CGSize(width: 60, height: 60))
-//                imageView.layer.borderWidth = 3
-                imageView.layer.cornerRadius = 8
-                imageView.layer.masksToBounds = true
-//                imageView.layer.borderColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
-                
-                let badge = MGBadgeView()
-                badge.font = UIFont.systemFont(ofSize: 14)
-                badge.badgeValue = cluster.memberAnnotations.count
-                badge.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-                badge.badgeColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
-                badge.outlineWidth = 0
-                badge.center = CGPoint(x: makerAnnotationView.frame.width - 2, y: 1)
-                
-                makerAnnotationView.addSubview(imageView)
-                makerAnnotationView.addSubview(badge)
-                
-                cluster.title = ""
-                cluster.subtitle = ""
-                makerAnnotationView.image = nil
-                makerAnnotationView.layer.borderWidth = 0
-                makerAnnotationView.layer.cornerRadius = 0
-                makerAnnotationView.layer.masksToBounds = false
-                
-            }else{
-                //バッジつけない方
-                makerAnnotationView.subviews.forEach { $0.removeFromSuperview() }
-                makerAnnotationView.image = UIImage(named: "1")!.resize(size: CGSize(width: 60, height: 60))
-//                makerAnnotationView.layer.borderWidth = 3
-                makerAnnotationView.layer.cornerRadius = 8
-                makerAnnotationView.layer.masksToBounds = true
-//                makerAnnotationView.layer.borderColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
+        if let cluster = annotation as? MKClusterAnnotation {
+            //バッジつける方
+            guard let lastAnnotation = cluster.memberAnnotations.last as? CustomAnnotation else { return MKAnnotationView() }
+            makerAnnotationView.subviews.forEach { $0.removeFromSuperview() }
+            let imageView = UIImageView()
+            let origin = makerAnnotationView.bounds.origin
+            imageView.frame = .init(x: origin.x, y: origin.y, width: 60, height: 60)
+            if let image = lastAnnotation.image {
+                imageView.image = image
+            } else {
+                imageView.sd_setImage(with: lastAnnotation.url, completed: { (image, error, _, _) in
+                    lastAnnotation.image = image
+                })
             }
-            makerAnnotationView.glyphTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
-            makerAnnotationView.markerTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
-            makerAnnotationView.displayPriority = .required
-            makerAnnotationView.animatesWhenAdded = true
-            makerAnnotationView.glyphText = ""
-            makerAnnotationView.clusteringIdentifier = "Posts"
-            return makerAnnotationView
+            imageView.layer.cornerRadius = 8
+            imageView.layer.masksToBounds = true
+            
+            let badge = MGBadgeView()
+            badge.font = UIFont.systemFont(ofSize: 14)
+            badge.badgeValue = cluster.memberAnnotations.count
+            badge.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            badge.badgeColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+            badge.outlineWidth = 0
+            badge.center = CGPoint(x: imageView.frame.width - 2, y: 1)
+            
+            makerAnnotationView.addSubview(imageView)
+            makerAnnotationView.addSubview(badge)
+            
+            cluster.title = ""
+            cluster.subtitle = ""
+        }else{
+            //バッジつけない方
+            guard let annotation = annotation as? CustomAnnotation else { return MKAnnotationView() }
+            makerAnnotationView.subviews.forEach { $0.removeFromSuperview() }
+            let imageView = UIImageView()
+            let origin = makerAnnotationView.bounds.origin
+            imageView.frame = .init(x: origin.x, y: origin.y, width: 60, height: 60)
+            imageView.sd_setImage(with: annotation.url, completed: { (image, error, _, _) in
+                annotation.image = image
+            })
+            imageView.layer.cornerRadius = 8
+            imageView.layer.masksToBounds = true
+            
+            makerAnnotationView.addSubview(imageView)
         }
+        makerAnnotationView.image = nil
+        makerAnnotationView.layer.masksToBounds = false
+        makerAnnotationView.glyphTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+        makerAnnotationView.markerTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+        makerAnnotationView.displayPriority = .required
+        makerAnnotationView.animatesWhenAdded = true
+        makerAnnotationView.glyphText = ""
+        makerAnnotationView.clusteringIdentifier = "Posts"
+        return makerAnnotationView
     }
         
-    
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let cluster = view.annotation as? MKClusterAnnotation {
 //            guard

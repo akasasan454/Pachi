@@ -98,11 +98,9 @@ extension TimelineVC : UITableViewDataSource {
     
     func configure(_ cell: PostViewCell, atIndexPath indexPath: IndexPath) {
         guard let post: Post = self.dataSource?[indexPath.item] else { return }
-        cell.subjectLabel?.text = post.latitude.description
-        cell.bodyLabel?.text = post.longitude.description
+        cell.setData(post: post)
         cell.disposer = post.listen { (user, error) in
-            cell.subjectLabel?.text = post.latitude.description
-            cell.bodyLabel?.text = post.longitude.description
+            cell.setData(post: post)
         }
     }
     
@@ -114,7 +112,7 @@ extension TimelineVC : UITableViewDataSource {
         return true
     }
 
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             self.dataSource?.removeDocument(at: indexPath.item)
         }

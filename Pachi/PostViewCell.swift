@@ -8,6 +8,7 @@
 
 import UIKit
 import Pring
+import FirebaseUI
 
 class PostViewCell: UITableViewCell {
     
@@ -15,7 +16,6 @@ class PostViewCell: UITableViewCell {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var bodyLabel: UILabel!
-    var images: [UIImage] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,15 +24,20 @@ class PostViewCell: UITableViewCell {
         self.layer.shadowRadius = 12
         self.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
-        images = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3")] as! [UIImage]
-        for (index, image) in images.enumerated() {
-            let imageView = UIImageView(frame: CGRect(x: CGFloat(index) * self.scrollView.frame.width, y: 0, width: self.scrollView.frame.width, height: self.scrollView.frame.width))
-            imageView.contentMode = .scaleAspectFit
-            imageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            imageView.image = image
-            scrollView.addSubview(imageView)
+    }
+    
+    func setData(post: Post) {
+        subjectLabel?.text = post.latitude.description
+        bodyLabel?.text = post.longitude.description
+        let width = self.scrollView.frame.width
+        let imageView = UIImageView(frame: CGRect(x: CGFloat(0) * width, y: 0, width: width, height: width))
+        imageView.contentMode = .scaleAspectFit
+        imageView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        imageView.sd_setImage(with: post.image?.downloadURL) { (image, error, _, _) in
+            print(image)
         }
-        scrollView.contentSize = CGSize(width: self.scrollView.frame.width * CGFloat(images.count), height: self.scrollView.frame.width)
+        scrollView.addSubview(imageView)
+        scrollView.contentSize = CGSize(width: width * CGFloat(1), height: width)
     }
 }
 

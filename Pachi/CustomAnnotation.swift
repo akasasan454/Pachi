@@ -8,7 +8,10 @@
 
 import UIKit
 import MapKit
+import Pring
 
 class CustomAnnotation: MKPointAnnotation {
     var id: String?
+    var url: URL?
+    var image: UIImage?
 }

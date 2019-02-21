@@ -10,7 +10,7 @@ import Pring
 
 @objcMembers
 class Post: Object {
-    dynamic var images: [File?] = []
+    dynamic var image: File?
     dynamic var subject: String?
     dynamic var body: String?
     dynamic var user: User?

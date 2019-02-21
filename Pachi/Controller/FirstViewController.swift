@@ -56,8 +56,8 @@ class FirstViewController: UIViewController{
     }
   
     func aleat(title:String,message:String,btn:String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
-        let button = UIAlertAction(title: btn, style: UIAlertActionStyle.cancel, handler: nil)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let button = UIAlertAction(title: btn, style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(button)
         present(alert, animated: true)
     }
